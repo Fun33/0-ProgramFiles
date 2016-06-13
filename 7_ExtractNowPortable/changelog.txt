@@ -1,0 +1,1203 @@
+4.8.0.0 - 08/02/13
+
+- Fixed problems when archive in set does not exist
+- Fixed delete archives when read-only
+- Added ability to run program after extraction
+- Added deep archive detection option
+- Added touch destination option
+- Added swedish translation from mikael gronholm
+
+4.7.9.0 - 01/26/13
+
+- Added new icon theme
+- Fixed history button not showing in certain instances
+
+4.7.8.0 - 01/16/13
+
+- Fixed rare crash when exiting
+
+4.7.7.0 - 01/14/13
+
+- Fixed bugs monitoring directories
+- Fixed some bugs in the status bar
+- Added misc tab to settings
+- Added ability to change default language
+- Added 'Open Config Directory' menu item in system menu
+
+4.7.6.0 - 12/28/12
+
+- Fixed drag and drop of folders
+
+4.7.5.0 - 12/23/12
+
+- Added French translation by colok
+- Fixed rar, r00 archive detection bug
+- Fixed browse for folder dialog when no trailing slash
+- Fixed all archives overwrite options
+
+4.7.4.0 - 10/25/12
+
+- Added clear button to history view
+- Added move to dialog
+- Added configurable password list timeout
+- Added support for cbz, cbr
+- Added ability to sort listview items when not extracting
+- Added German & Chinese translations
+- Fixed when moving archives it won't overwrite existing
+- Fixed creating new folder in browser for folder issues
+- Fixed exclude files to extract hanging
+- Fixed clicking write to file caused crash
+- Fixed not saving settings after closing settings dialog
+- Fixed bug in archive filename macro
+- Fixed inserting destination macro
+- Fixed some memory leaks
+- Fixed rare rar file decryption bug
+- Fixed localization bugs
+- Fixed sound not playing in certain instances
+- Changed file monitoring to fix weird crash
+- Turn off auto scroll in listview by default
+
+4.7.3.0 - 08/27/12
+
+- Fixed installer copying context menu dll
+- Disabled context menu options if dll doesn't exist
+- Added check for app open in installer
+- Added Br Portuguese translation by Igor Ruckert
+
+4.7.2.0 - 08/26/12
+
+- Added more new macro expanders
+- Fixed bugs in browse for folder
+- Added ability to use macros in password list
+- Added drop handling for shell context menu
+- Fixed bugs loading localization
+- Fixed monitoring directories crash
+
+4.7.1.0 - 08/23/12
+
+- Fixed drag and drop with certain rars
+- Added hungarian translation by ZityiSoft
+- Fixed bugs in the installer
+
+4.7.0.0 - 08/21/12
+
+- Improvements to drag and drop functionality
+- Improved write performance
+- Added rename option to overwrite dialog
+- Added macro button to external add dialog
+- Added localization support
+- Added korean language support from Young-Cheon Kim
+- Moved open destination folder option to diff. group
+- Changed extract only unextracted option to be default
+- Fixed bug in overwrite dlg with delete broken files
+- Fixed bug loading certain settings
+- Fixed bug identifying .rar with .part in their name
+- Changed installer to NSIS for Windows 95 support
+
+4.6.9.0 - 07/28/12
+
+- Changed destination paths to use macro expanders
+- Added option to timeout the password dialog
+- Added tool tips to browse for folder dialog
+- Added ability to go to website to download updates
+- Added yes&no to all archives option in overwrite dialog
+
+4.6.8.0 - 06/06/12
+
+- Changed progress bar color during test mode
+- Fixed ask for folder dlg during test mode
+- Fixed program not closing options
+- Fixed cleanup options saving
+- Fixed add archives not working
+
+4.6.7.0 - 04/24/12
+
+- Added list of files to exclude from extraction in settings
+- Added cancel button to overwrite dialog
+- Added option to hide minimize balloon tooltip
+- Fixed bugs in extract automatically context menu option
+- Fixed test mode so it doesn't try to do any post extraction options
+- Fixed about dialog crashing
+- Fixed issues with sit extraction
+- Fixed backwards compatibility with Windows 95
+- Cleaned up settings
+
+4.6.6.0 - 03/08/12
+
+- Added -minimize command line parameter
+- Added test archives mode option in right-click menu
+- Added extract only unextracted mode in right-click menu 
+- Fixed extract automatically when there is only one folder
+- Fixed missing file in the portable zip
+- Fixed destination directory creation /w archive name has space at the end
+- Fixed leap year bug 
+
+4.6.5.0 - 01/31/12
+
+- Added 'Extract Automatically' option to context menu
+- Added Tango icon set by Vlatko Boskoski
+- Renamed several options in the post extract tab
+- Updated to Lua 5.2 
+
+4.6.4.0 - 01/09/12
+
+- Added 'Decide archive fate during recursion' option
+- Fixed 'Delete archive folder' to not delete special paths
+
+4.6.3.0 - 01/01/12
+
+- Added more support for unicode including unicode passwords
+- Added extraction for IMZ
+- Added 'Delete archives folder' option
+- Added systray balloon tips when minimizing to tray
+- Added systray balloon tips when extraction complete
+- Added 'Assume one password per archive' option to speed up password list
+- Fixed deletion of archives in recursive extraction when option checked
+- Fixed unicode filename being cut off when specifying password list filename
+- Fixed path field disabled in passwords tab when it shouldn't be
+- Fixed line endings when adding password to password list
+- Fixed file modified date detection when extracting .tar.gz
+- Improved support for ISO extraction
+- Improved handling of inclusion drag&drop mask when empty
+- Updated to 7-Zip library 9.22
+
+4.6.2.0 - 05/03/11
+
+- Fixed target parameter when specifying a directory
+- Fixed overwrite dialog not displaying when main window minimized
+
+4.6.1.0 - 03/23/11
+
+- Fixed parsing of arguments when using external commands
+
+4.6.0.0 - 03/14/11
+
+- Fixed crash bug with browse dialog on windows xp
+- Added rename single file after archive folder name option
+- Fixed delete broken files option
+
+4.5.9.0 - 02/26/11
+
+- Fixed external processing when no argument specified
+- Fixed external processing for supported file types
+- Fixed monitoring directory not detecting moved folder
+- Fixed detection of split archives
+- Added macro support to favorite folder
+
+4.5.8.0 - 12/25/10
+
+- Fixed monitoring directories on file transfers
+- Fixed window shown in taskbar when minimize to tray
+- Fixed bug in target command line parameter
+
+4.5.7.0 - 12/17/10
+
+- Fixed 'Remove duplicate archive name folder' option
+- Fixed monitor directories on long copy operation
+- Added ability to launch external extraction tools
+- Improved monitoring directories tab interface
+- Fixed settings not being saved due to UAC
+
+4.5.6.0 - 12/06/10
+
+- All settings now stored in extractnow.ini
+
+4.5.5.0 - 12/06/10
+
+- Fixed dropping archives that have no extension
+- All settings now stored in settings.lua
+- Automatic extraction of .tar with-in .gz or .bz2
+- Fixed assert error when disk space is full
+- Added support for .squashfs and .cramfs
+- Updated to 7zip library 9.20
+
+4.5.4.0 - 11/04/10
+
+- Modified password list to be specified via a text file
+- Fixed password list resetting overwrite option
+- Added custom browse for folder dialog
+- Added remove duplicate archive folder name option
+
+4.5.3.0 - 10/28/10
+
+- Fixed corruption of paths if certain options enabled
+
+4.5.2.0 - 10/16/10
+
+- Fixed issues detecting split(.001) archives
+- Fixed dropping nth volume in set does not add first volume
+- Fixed window position saving/loading issues
+- Fixed .tar.gz extraction bug
+- Fixed issues with associating wrong file type extension
+- Speed improvements when searching for archives
+
+4.5.1.0 - 09/28/10
+
+- Fixed extraction to network paths
+- Fixed monitoring directories for archives
+- Added 'Elapsed' column to determine total time elapsed
+- Added 'Log history' option in settings
+- Various speed improvements
+
+4.5.0.0 - 09/18/10
+
+- Added 'Extract to folder...' context menu item
+- Added 'Close program if successful' option
+- Added display of attempted password in history view
+- Fixed context menu settings being overwritten
+- Fixed overwrite dlg not shown when main dlg minimized
+- Fixed path column cut off on long paths
+- Fixed context menu help text being garbled in Win7
+- Fixed icon bug in startup minimize to tray option
+- Fixed stop button not working due to Win95 compat.
+- Changed file assoc list to show exts rather than formats
+
+4.4.9.0 - 09/02/10
+
+- Added option to never overwrite files in destination tab
+- Moved 'Rename single file..' option to post extraction tab
+- Cleaned up the destination tab in settings
+- Fixed progress bar on RAR archives
+- Fixed tab selection bug when selecting Monitor tab
+- Fixed directory creation error on '.'
+- Improved extraction speed 
+
+4.4.8.0 - 08/30/10
+
+- Added thread priority type Low option
+- Fixed file type registration problems in XP
+- Fixed progress bar exceeding 100% on .bz2 archives
+
+4.4.7.0 - 08/05/10
+
+- Added recursive archive extraction option
+- Added thread priority option to settings dialog
+- Added time column to extraction list view
+- Fixed drag&drop for rar archives with .r## format
+- Fixed crash bug in overwrite dlg when file has no valid time
+- Fixed crash bug in overwrite dlg when file has no extension
+- Fixed history view status message blank when file size is 0
+- Fixed file type assocation settings in Windows XP or lower
+- Fixed windows 95 compatibility broken in 4.44
+
+4.4.6.0 - 07/20/10
+
+- Added "Add to password list" option in password dialog
+- Added ability to script events via Lua (see extractnow.lua-sample)
+- Added option to delete broken files
+- Added inclusion/exclusion filter type to Drag&Drop tab
+- Fixed filter mask only being respected when searching
+- Fixed selecting not to overwrite still resets file time
+- Modified password dialog text so it can be selected/copied
+- Reworked post-extraction tab interface
+
+4.4.5.0 - 07/02/10
+
+- Fixed password list traversal bug
+- Fixed issue where long password list not saving
+- Improved file type assocation registration
+
+4.4.4.0 - 06/03/10
+
+- Fixed clear archives option
+- Fixed open containing folder from menu
+- Added ability to monitor directories for archives
+
+4.4.3.0 - 05/30/10
+
+- Added window auto-switch to history option
+- Improved history error reporting
+- Fixed browse for folder selected path
+- Fixed sound not working
+- Fixed extraction with empty password list
+- Fixed stop/resume buttons not always shown while extracting
+
+4.4.2.0 - 05/11/10
+
+- Fixed crash bug in context menu extension
+- Fixed split extraction
+
+4.4.1.0 - 05/10/10
+
+- Fixed multiple volume extraction
+- Fixed favorite folder message in settings 
+- Fixed problems with update notifications
+
+4.4.0.29 - 05/09/10
+
+- Added file signature detection
+- Fixed crash when disk space low
+- Updated to lzma sdk 9.13 beta
+
+4.4.0.28 - 10/08/09
+
+- Fixed sit extraction
+
+4.4.0.27 - 09/23/09
+
+- Added scrollbar to password list
+- Fixed iso extraction with certain isos
+- Updated to lzma sdk 9.07 beta (with new xz,lzma2 support)
+
+4.4.0.26 - 09/12/09
+
+- Fixed crash pressing extract with no files
+- Fixed /target command line parameter
+
+4.4.0.25 - 09/10/09
+
+- Fixed settings dialog not openning in center of parent
+- Fixed after prompting for pw the first time, it would prompt again
+- Fixed progress bar text on canceling browser for folder 
+
+4.4.0.24 - 09/07/09
+
+- Fixed extract button disabled when dropping folders
+- Added "prompt for password, when pwdlist exhaustion" option
+- Fixed warning/fatal icons in certain instances
+- Added warning/fatal errors when users respond to password dialog
+- Fixed closing settings dialog causes change notification to desktop
+- Updated about dialog
+- Added check for latest version functionality back in
+- Added /target command line option to specify extraction directory
+- Added 32x32 find icon in dbljdesign.icl 
+- Improved changing of icon themes
+
+4.4.0.23 - 09/07/09
+
+- Fixed not being able to extract after dropping archives
+
+4.4.0.22 - 09/07/09
+
+- Added password list in settings, which is like #1 requested feature
+- Fixed extraction with 0 byte files
+- Fixed setting of extracted dir/file timestamps
+- Fixed button pushed/mouseover state
+- Fixed regsvr32 process not quiting after closing settings dialog
+
+4.4.0.21 - 09/04/09
+
+- Fixed problems with dialog not displaying properly on win64
+- Fixed crash when closing settings dialog when removing file assocations
+- Fixed context menu "search for archives" not functioning
+- Updated dbljdesign.icl with latest icons
+
+4.4.0.20 - 09/03/09
+
+- Fixed dialog hanging if you close it while file is extracting
+- Fixed pause/resume button icons not showing when you click them
+- Fixed context menu "search for archives" not showing when grouped
+- Fixed context menu "search for archive" icon not displaying
+- Fixed dropping archives doesn't extract already extracted archives
+- Fixed column widths not saving when exiting
+- Fixed zero byte files showing as 0% in history view
+- Added displaying of errors in the history view
+- Fixed history view column show/hide not working properly
+- Added auto scrolling of listviews (via header right-click menu)
+- Added ability to change icon theme inside settings (requires app restart)
+- Added doublejdesign.co.uk icon set to install package
+- Fixed "search for archives" from right-click in main interface not working
+- Updated lots of code to be 64-bit compatible
+- Added 64 bit compatible contextmenu (extractmenu64.dll)
+- Fixed message box error at startup if unacev2.dll not found
+
+4.4.0.19 - 08/27/09
+
+- Fixed "group options" setting not showing context menu
+- Fixed context menu in win7 not showing 32bit icon
+- UPX'ed stuffit dll is smaller
+- Fixed extractnow.icl loads on windows 95
+- Fixed context menu on windows 95 uses 12x12 icon
+- Context menu dll now properly unloads from Explorer
+- Updated icons and main icons 
+   (http://www.pinvoke.com/) + famfamfam
+- Fixed windows 7 taskbar icon pixelated
+- Fixed header column menu not setting visibility properly
+- Fixed items redraw after a column is shown/hidden
+- Fixed context menu options, not causing extraction to occur
+  when extractnow is opened
+
+4.4.0.18 - 08/25/09
+
+- Fixed dropping archives sometimes crashes 
+- Moved all icons out of extractnow.exe and extractmenu.dll 
+  and into extractnow.icl so people can create their own icon libraries.
+- Fixed saving of favorite folder in settings dialog
+- Fixed context menu icon transparency issue
+
+4.4.0.17 - 08/24/09
+
+- Fixed button drawing with BM_SETSTATE
+  (See http://www.ddj.com/184409155)
+- Backwards compatibility for Windows 95
+   + Requires unicows.dll
+   + Requires IE 5.5
+   + No support for ACE or SIT dlls
+   + Uses Winsock 1.1 now
+- Custom gradient drawing function
+   + Removes MSIMG32.DLL requirement
+- First beta with updated install program
+- Install now includes stuffit5.engine-5.1.dll
+
+4.4.0.16 - 08/21/09
+
+- History view column widths are now saved when exiting
+- Fixed progress in history view not going to 100% if extracting
+  same archive twice
+- If there are no files to extract, it will close on exit, 
+  if option is checked.
+- Fixed button draw flickering
+- Fixed progress bar border in aero
+- Fixed problems with the control positions when changing themes
+- Added colors to progress bars in the main todo listview
+- Fixed file assocation registration with UAC
+- Fixed context menu registration with UAC
+- Fixed context menu icons on Win7/Vista
+- Fixed context menu icons in WinXP
+- Fixed context menu options in settings, so it doesn't require
+  you to close extractnow for changes to take effect
+- Fixed archives not being recycled if option checked
+
+4.4.0.15 - 08/16/09
+
+- Fixed right-click menu not working
+- Fixed recycling archives to bin
+- Fixed extraction errors
+
+4.4.0.14 - 08/06/09
+
+- Added write to file functionality for the history view
+- Fixed button visibility when moving to history view
+- Fixed problem with extracting .iso 
+
+4.4.0.13 - 05/26/09
+
+- Fixed default button now is now painted with bold border
+- Added archive file name to password dialog
+- Password dialog checkbox states are saved from last use
+- Fixed drag and drop of folders
+
+4.4.0.12 - 05/01/09
+
+- Fixed password dialog error when checking use for entire archive
+
+4.4.0.11 - 05/01/09
+
+- Fixed extraction of rar archives with encrypt names option
+- Fixed unable to drop if filename didn't have lowercase extension
+- Improved file associations area in Explorer
+- Added all the archive formats that 7zip dll supports
+- Updated 7zip library to latest version
+- Fixed file association bugs
+
+4.4.0.10 - 04/21/09
+
+- Fixed extraction bugs again
+- Less memory usage
+- Fixed .rar named folder had .part in it
+
+4.4.0.9 - 04/21/09
+
+- Fixed extraction not working at all
+
+4.4.0.8 - 04/17/09
+
+- Fixed .rar multi-volume support
+- Fixed setting of file date
+- Fixed displaying of status bar text
+- Changed progress bar color gray
+- Added progress bar to listview on history view
+- Added thumbs up icon if extracted okay
+- Fixed listview status clears when done extracting
+- Fixed moving of archives when extraction complete
+- Fixed archives being locked on multi-vol extract
+- Fixed listview icon height
+- Fixed saving of unicode strings to registry 
+
+4.4.0.7 - 04/16/09
+
+- Fixed settings dialog not opening
+- Improved underlying unicode support
+
+4.4.0.6 - 04/11/09
+
+- Added basic unicode support for filenames
+- Fixed .rar multiple volume support
+- Settings are moved back to registry
+
+4.4.0.5 - 04/08/09
+
+- Fixed stop button freezing up the interface
+- Fixed automatically extract dropped archives
+- Fixed ask to stop extract on close msgbox
+
+4.4.0.4 - 04/06/09
+
+- Fixed Write to File button position
+- Fixed clear button crashing and not clearing items
+- Settings now saved in lua config file
+
+4.4.0.3 - 02/23/09
+
+4.4.0.2 - 01/22/07
+
+- Updated unRAR library to 3.7.8
+- Updated lzma library to 4.5.7
+- Updated WinImage library to 8.10
+- Compiled with Visual Studio 2008
+
+4.4.0.1 - 1/11/2009
+
+4.3.9.0 - 04/06/07
+
+- Fixed search dialog not closing properly
+
+4.3.8.0 - 03/14/07
+
+- Added theme drawing to custom button controls
+- Added manifest file for windows theming
+- Added limited backwards compatibility (Windows 98)
+- Added true color icon image formats (Windows 98)
+- Fixed Add Archives menu item (Vista)
+- Fixed context menu Enqueue not working
+- Fixed context menus not appearing (Vista)
+- Fixed search dialog hanging when pressing Stop
+- Increased font size on various controls
+- Merged eta information into progress column
+
+4.3.7.0 - 12/11/06
+
+- Fixed problem with read error during rar extraction
+
+4.3.6.0 - 12/09/06
+
+- Added option to turn off all sounds in settings
+- Fixed context menu right-clicking on folder works
+- Fixed extracting files to the root of hard drive
+- Fixed extracting of files to and from network paths
+
+4.3.5.0 - 11/28/06
+
+- Fixed invalid zip crc's being generated
+- Updated unrar library
+
+4.3.4.0 - 11/26/06
+
+- Added zip AES encryption support
+- Added tar support
+- Added first error shows under status in list view
+- Fixed bug in Show Default File Type Icons
+
+4.3.3.0 - 11/08/06
+
+- Redesigned settings dialog with tabs
+- Fixed bug in checking for new versions
+- Fixed rare context menu/explorer crashes
+
+4.3.2.0 - 11/03/06
+
+- Fixed problem with stop button always visible
+
+4.3.1.0 - 11/02/06
+
+- Updated thread and time handling libraries
+- Updated column adjustments
+- Updated context menu icons back to boxes
+
+4.3.0.0 - 9/29/06
+
+- Added column sorting functionality to select columns
+- Fixed bugs in column reordering
+- Added archive extension extra column 
+- Added Search Ignore Mask registry setting
+- Changed some user interface text in settings dialog
+
+4.2.9.0 - 08/26/06
+
+- Fixed context menu drawing issues
+- Fixed password dialog default button drawing
+- Fixed exit confirmation message
+- Changed context menu icon
+
+4.2.8.0 - 08/20/06
+
+- Fixed encrypted zip file bug in minizip
+- Fixed context menu item entry mix ups
+
+4.2.7.0 - 08/13/06
+
+- Added confirm on exit during extraction
+- Fixed context menu grouping bugs
+- Fixed encrypted zip file extraction
+- Fixed default button on password dialog
+
+4.2.6.0 - 08/01/06
+
+- Added context menu items grouping option
+- Fixed content menu when right-clicking on start
+- Updated searching for archives code
+
+4.2.5.0 - 07/25/06
+
+- Fixed bug when extracting to root drive
+- Fixed mutex bug in context menus
+
+4.2.4.0 - 07/12/06
+
+- Added pause/resume button
+- Added ability to disable certain context menu items
+- Fixed timeout bug in check for updates
+
+4.2.3.0 - 07/08/06
+
+- Fixed move archives after extraction registry bug
+- Updated painting and drawing code
+
+4.2.2.0 - 06/25/06
+
+- Fixed rar extraction with archives made with unix
+- Fixed content menu when right-clicking on start
+- Renamed context menu dll to extractmenu.dll
+- Compiled with Visual Studio 2005
+
+4.2.1.0 - 06/13/06
+
+- Fixed rar and zip extraction, now sets directory time
+- Fixed listview grid row painting bug
+- Fixed right-click item selection bug
+- Fixed system tray icon single click restore bug
+- Updated painting and drawing code
+
+4.2.0.0 - 05/31/06
+
+- Added context menu now supports multiple archives
+- Added context menu 'enqueue' option
+- Added context menu 'search for archives' on folders
+- Added more organization to settings options list
+- Added trys to figure out first archive in archive set
+- Added archive disabled status when archive not exist
+- Fixed listview item is selected when right-click
+- Fixed rar files being opened and extracted by zlib
+- Fixed context menu color when menu item is selected
+- Fixed archive open bug when program is already running
+- Fixed bug when listview columns are 0 width
+
+4.1.9.0 - 05/21/06
+
+- Added explorer context menus
+- Added extra columns size & path to listview context menu
+- Added auto-extraction of archives on drag and drop option
+- Added auto-clearing archives successfully extracted option
+- Fixed right-click menu popup drag problem
+
+4.1.8.0 - 05/15/06
+
+- Added properties option to listview right-click menu
+- Added open containing folder to listview right-click menu
+- Added complete sound file on extraction success
+- Added incomplete sound file on extraction failure
+- Added sfv file deletes, moves, and recyles with archives
+- Fixed custom drawn buttons show focused state
+- Fixed custom drawn buttons respond to enter key
+- Fixed select all, ctrl-a key functionality in listview
+- Fixed file exists check before archive extraction
+- Removed close button on password dialog
+
+4.1.7.0 - 05/09/06
+
+- Added rename single file archive after archive option
+- Added history shows diff. between extracted files and folders
+- Added and improved listview look to have more columns
+- Added listview columns can be reordered and width changed
+- Updated check for latest update is now faster
+
+4.1.6.0 - 04/30/06
+
+- Added extraction history tree view to history dialog
+- Added write to file button in history dialog
+- Added batch destination message box query
+- Fixed not enough disk space bug with rar archives
+
+4.1.5.0 - 04/21/06
+
+- Fixed automatically extract on startup settings option
+- Fixed extracted file date and time stamps for zip
+- Fixed open destination folder hang on program close
+
+4.1.4.0 - 04/12/06
+
+- Added functionality for moving archives after extraction
+- Fixed drag and drop support for folders on some machines
+- Fixed iso memory leak on user aborting extraction
+- Fixed -debug command line support
+
+4.1.3.0 - 03/20/06
+
+- Added allow multiple instances option
+- Added skipping of password protected files in zip archives
+- Added disk space checking before files are extracted (zip, rar, 
+   iso, bin, img, imz, ima, sit, jar)
+- Added checking for latest version in separate thread
+- Fixed rar progress indication bug with archives over 4gb
+
+4.1.2.0 - 03/17/06
+
+- Fixed rar extraction of multi-volume archives
+- Fixed rar error reporting bug
+
+4.1.1.0 - 03/16/06
+
+- Added system tray popup menu on icon right-click
+- Added automatically extract archives on startup option
+- Fixed extracting files to network path issues
+- Fixed window resizing problem on first run
+- Fixed check for updates on startup reporting wrong
+- Fixed history report hanging after multiple extractions
+
+4.1.0.0 - 03/07/06
+
+- Fixed folder name with accents bug in rar extraction
+
+4.0.9.0 - 03/03/06
+
+- Added recycle archive files after extraction option
+- Added containing archive folder name to destination option
+- Added search through folders remembers last folder
+- Added custom-draw text is trimmed if needed
+- Fixed memory bug when deleting archives after extraction
+- Updated some program icons
+
+4.0.8.0 - 03/02/06
+
+- Added history button for viewing extraction details
+- Added extraction details allows for multiple errors
+- Fixed warning and fatal error progress bar border color
+- Fixed extraction history formatting bug
+- Fixed deletion of source files on extraction failure
+- Fixed removes .part from rar destination folders
+- Fixed bug in settings dialog with checkboxes disabled
+- Removed view extraction details from right-click menu
+- Removed check for updates on startup being on by default
+- Updated code for stability
+
+4.0.7.0 - 02/20/06
+
+- Added view extraction details to right-click menu
+- Added high resolution to main icon
+- Removed error tool tips, no longer needed
+- Fixed registry bug
+- Fixed iso/img/bin progress bug
+- Fixed bug in lha/lzh extraction
+- Changed listview font to use a smaller font
+
+4.0.6.0 - 02/08/06
+
+- Added ace support
+- Added limited lzma/.7z support
+- Changed iso, bin progress indication method
+- Fixed possible bug in extraction without sit dll
+- Fixed drawing overlapping with long file names
+- Fixed progress indication bug in files over 4gb
+
+4.0.5.0 - 01/27/06
+
+- Added check for updates option from system menu
+- Added check for updates on startup in settings
+
+4.0.4.0 - 01/25/06
+
+- Improved extraction status reporting to main window
+- Fixed potential bug in CRC checking for zip archives
+- Added more support for sit extraction
+- Removed sitx file assocation, which stuffit5 does not support
+- Double buffered listview to prevent flickering
+- Fixed bug in directory creation with unix type zip files
+- Fixed settings gui not reflecting favorite folder setting
+- More descriptive rar error reporting
+- Rar dll not required, unrar source now compiled with exe
+- Updated main icon and file icon as well as setup bitmap
+- Clear button now deletes any selected items or all items
+
+4.0.3.0 - 01/14/06
+
+- Improved thread management
+- Updated rar progress bar to show archive progress
+- Fixed file association not openning archive
+- Updated main program icon again
+
+4.0.2.0 - 01/07/06
+
+- Fixed tooltips not being destroyed with listview item deletion
+- Added button pressed drawing for custom button control
+- Updated all buttons to use custom button control
+- Fixed icon not displaying in search through folders dialog
+- Added lha, lzh file type associations to settings
+- Added always on top and minimize to tray to settings dialog
+- Updated installation image
+- Updated main program icon
+
+4.0.1.0 - 01/05/06
+
+- Added right-click menu support in user interface
+- Added support for zip protected archives
+- Added support for rar protected archives
+
+4.0.0.0 - 01/01/06
+
+- Completely rewritten in C with Windows API
+- Redesigned interface and file/extraction view
+- Includes cool custom button and progress controls
+- File view error color coding and error tool tips
+- Corrected some logical bugs
+
+3.6.0.0 - 01/04/04
+
+- Updated progress bar look 
+- Right-click on progress bar to change color, left click to restore 
+- Added RAR SFV file checking (no CRC32 check) 
+- Fixed directory creation always in lowercase 
+- Added directory monitoring see (monitordir.ini) 
+- Updated website for checking version 
+- Updated Write to File 
+- Fixed Overwrite All Files for ZIP archives 
+- Fixed Alt-Tab icon 
+- Added repair support for PAR1, and PAR2 files 
+
+3.5.6.0 - 12/03/03
+
+- Drag and drop support restored for RAR 
+- Removed .part in destination directory with RAR 
+- Fixed bug with zip extraction reporting 
+- Fixed SIT not working when SIT DLL is present 
+- Fixed 'Delete after Extraction' bug with ZIP files 
+- Fixed 'Automatically extract archive into' bug 
+
+3.5.3.0 - 11/29/03
+
+- Major changes to ACE extraction code 
+- Delete after extraction bugs fixed 
+- Masking bugs fixed 
+
+3.5.0.0 - 11/28/03
+
+- Revamped lots of code 
+- Removed foreign language support 
+- Changed how settings are saved 
+- Made masking easier to use 
+- Global masking for all file types 
+- Removed Info-ZIP's unzip32.dll and replaced it with Zlib static library 
+- SIT support not included in setup
+- Fixed rar support for multi-volume file format .part1.rar
+- Added extraction progress to system tray icon tool tip 
+- Temporarily disabled zip password stuff 
+
+3.3.6.0 - 10/20/03
+
+- Fixed file associated icon 
+- Updated Check version download link 
+- Added SIT support 
+
+3.3.5.0 - 10/11/03
+
+- Fixed MP3->WAV support 
+- Added SIT, LHA, LHZ support (no reporting) 
+- Changed settings dialog 
+- Fixed more sorting problems 
+
+3.3.0.0 - 10/1/03
+
+- Added MP3->WAV extraction 
+- ZIP no-overwrite option now works again 
+- Fixed showing of CRC OK in history window 
+- Double-clicking MP3 files displays MP3 file info 
+- Fixed some GUI problems 
+- Fixed Floppy drive seek at startup on Win98/ME 
+- Fixed icons on Win98/ME 
+- Fixed Settings dialog headings in Win98/ME 
+
+3.2.3.0 - 09/28/03
+
+- Fixed sorting bug 
+- Fixed RAR extraction bug 
+- Updated some tool tips 
+
+3.2.0.0 - 09/27/03
+
+- Changed button look 
+- Added icons to each button 
+- Added a "Use Default File Icon" feature to the right-click menu 
+
+3.1.7.0 - 09/24/03
+
+- Fixed RAR password bug 
+- Fixed ExtractNow desktop icon 
+- Compiled setup package with newer version of Inno Setup 
+
+3.1.5.0 - 09/10/03
+
+- Allows BIN, IMA, & IMZ file extraction via WinImage SDK 
+- Fixed ExtractNow icon in 256 color mode 
+- Fixed drag and drop bug 
+
+3.1.3.0 - 09/05/03
+
+- Added ISO support via WinImage SDK 
+- Added IMG support via WinImage SDK 
+- Recompiled with Microsoft Visual C++ .NET 2003 
+- Fixed progress bar text was always white 
+- Updated icons for the program 
+- Fixed some debug problems 
+- Replaced picture in About dialog 
+- History view now auto-scrolls 
+- Fixed Extract button disability bug 
+- Buttons now show disabled state 
+- RAR extraction problem fixed 
+- Stop button now works for RAR extraction 
+- Fixed ZIP extraction bug 
+
+3.0.0.0 - 06/05/03
+
+- Added new option Save File List On Close
+- Added new option Close Program After Extraction
+- Updated UnRAR.DLL to version 3.0 
+- Updated UnACE.DLL to version 2.1.1.0 
+- Updated UnZIP32.DLL to version 5.5.0 
+- Updated file association
+- Double-clicking an archive will list its contents 
+- Options in Settings window are in a drop down list 
+- Fixed drag and drop bug 
+- Fixed some other bugs 
+
+2.9.7.0 - 05/04/02
+
+- Fixed file association bug 
+- Made changes to Italian Language DLL 
+
+2.9.6.0 - 05/04/02
+
+- Fixed ACE and RAR bugs 
+- Added Romanian Language DLL to setup package 
+
+2.9.5.0 - 04/26/02
+
+- Fixed bug in List of Files To Extract which were not saved 
+- Fixed ACE extraction problem 
+
+2.9.3.0 - 04/24/02
+
+- Fixed file association bugs 
+- Updated UnRAR.dll to (April 20, 2002 Release) 
+- Fixed "Always On Top" bug 
+- Delete After Extraction now deletes all files in a split-archive set 
+
+2.9.0.0 - 04/17/02
+
+- Fixed a few misc bugs 
+- Delete After Extraction has 3 states: gray, checked, and unchecked
+- Gray will delete to the Recycling Bin 
+- Checked will delete the file permanently 
+- Unchecked will not delete the file at all 
+- Cleaned up the Write To File output 
+- Language is changed inside the program via the program's system menu
+- Added German Language DLL to the setup package 
+
+2.8.6.0 - 02/27/02
+
+- Delete After Extraction bug has been fixed 
+- Loading of previous session files much faster! 
+- Sorting of history bug fixed 
+- Added right-click menu to history window with Simple/Detailed option 
+- Clear button clears selected files correctly
+- Files are removed from the List of Files To Extract after deletion
+- Added Spanish (Spain) DLL to setup package 
+
+2.8.3.0 - 02/13/02
+
+- Added French DLL to setup package 
+- Added Italian DLL to setup package 
+- Language selectable on first-run 
+
+2.8.0.0 - 02/8/02
+
+- Fixed bug when Browsing For Folders in Windows 98 
+- Added multi-language support 
+- Detailed about box with DLL version information 
+- New cool looking owner-drawn progress bars 
+- Updated UnACEV2.DLL from 2.0.X to 2.1.X 
+- Updated UnRAR.DLL
+- Fixed menu bugs 
+- Reduced file size from version 2.70 
+- Added Open Archive's Folder feature in the menu 
+- Added Remove Selected Item(s) feature in the menu 
+- Added Sorting Ascending/Descending, by Archive File and Folder Name 
+
+2.7.0.0 - 01/3/02
+
+- Fixed many misc. bugs 
+- Conditioned to work with and look good in XP 
+- Buttons now look XP style 
+- Tool tips are balloon-like 
+- Updated menus to have VS.NET style 
+- Updated extraction code 
+- Fixed auto-extraction bugs 
+- Fixed long file name problem 
+- Added support for file extensions : .001 
+- Updated folder selection code 
+- Added "Send To" shortcut 
+- Added file type icon to associated archives 
+- Fixed file association bugs 
+- Updated help files 
+
+2.5.8.0 - 10/31/01
+
+- Fixed some file association bugs
+ 
+2.5.7.0 - 10/30/01
+
+- Added 'Close Program After Extracted' option 
+- Added selection of which types of archives you want associated
+- Added ExtractNow as the default association for archive types 
+- Added auto-extract option for associated file types 
+
+2.5.3.0 - 10/22/01
+
+- Added Check for New Version feature
+- Fixed NT4 SP5 'SHGetSettings' error 
+
+2.5.1.0 - 10/21/01
+
+- Fixed and improved file loading at startup 
+
+2.5.0.0 - 10/17/01
+
+- Updated searching for archives in folder routine 
+- Fixed some drag and drop errors 
+- Added 'Add File(s)' to right-click menu
+- Added 'Search Through/Add Folder' to right-click menu
+
+2.4.8.0 - 10/15/01
+
+- Coded in cool new menus with icons and stuff 
+- Added testarchive.zip for first load
+- Added error for non-archives dropped for new users 
+- Saves list loaded files when closed and loads them again on open.
+- Updated logging 
+
+2.4.3.0 - 10/06/01
+
+- Fixed multiple extracting with Right-click integration 
+- Fixed problem with icon in the New Folder dialog not showing correctly
+- Fixed the 16x16 icon for the program 
+- Added correct error reporting for empty ZIP files 
+- Updated pictures in help files 
+
+2.4.0.0 - 10/02/01
+
+- Renamed some options in the settings dialog 
+- Fixed two bugs in ZIP error reporting 
+- Added 'Open with ExtractNow' to Right-Click  integration 
+- Fixed bug with Right-Click integration and Windows XP 
+- Double-clicking system tray icon automatically restores the window 
+
+2.3.5.0 - 09/30/01
+
+- Added 'Minimize to Tray' option 
+- Added support for JAR extraction which uses ZIP uncompression method 
+
+2.3.2.0 - 09/27/01
+
+- Bug fixed in right-click integration 
+- Added spiffy image to setup program 
+- Added what's new file to setup program 
+
+2.3.1.0 - 09/26/01
+
+- Fixed GetLongPathName error on NT 
+
+2.3.0.0 - 09/25/01
+
+- Added a 'Check For Latest Version' feature 
+- Fixed a few GUI problems 
+- Fixed right-click integration access violation errors 
+- Fixed right-click integration with RAR and ACE files 
+- Removed some unneeded code 
+- Updated help files 
+
+2.2.6.0
+
+- Added password support for ACE, ZIP, and RAR files 
+- Fixed access violation error 
+- Improvements in coding 
+
+2.2.3.0
+
+- Processes RAR, ACE, & ZIP SFX archives 
+- Auto-scroll feature added to the listview controls
+
+2.2.1.0
+
+- Added 'Always On Top' option 
+- Updated help files to show more features
+- Fixed problem with Quick Launch icon not being created during setup 
+- Fixed a user interface problem 
+
+2.2.0.0
+
+- Added more status reporting and full ACE status reporting 
+- Added Scanning & Testing status reporting stages 
+- Added more functionality to the stop button 
+- Fixed RAR broken multi-volume archive access violation error 
+- Masking works with ACE files now 
+- Fixed more memory leaks 
+- Replaced unrar32.dll with a better one 
+- Updated install/uninstall program 
+
+2.1.6.0
+
+- Fixed folder selection problem in settings dialog 
+- Updated website and e-mail info in program 
+
+2.1.5.0
+
+- Fixed extraction problem 
+- Made dialog resizable 
+- Made columns resize w/dialog 
+- Added Stop functionality for extraction 
+
+2.1.1.0
+
+- Created tool tips for the main dialog 
+
+2.1.0.0
+
+- Fixed browse window position 
+- Added text next to progress bars for stats 
+- Status text is displayed when extracting files 
+- Shows progress of ACE extraction 
+- Multiple instances are allowed now
+- Improved ZIP, ACE, & RAR history reporting 
+- CRC testing on ZIP, ACE, & RAR files before extraction 
+- Fixed memory leaks and access violation errors 
+- Fixed ACE & RAR bugs 
+- Reports error if next volume in multi-volume archive is not found 
+
+2.0.0.0
+First Release as ExtractNow
+
+- New interface with new progress bars 
+- New and simpler options 
+- Simple option to automatically overwrite or not to 
+- Largely recoded 
+- Improved icon coding 
+- Improved registry access coding 
+- Writes history to file 
+- More comprehensive error reporting 
+- Works with archives made with WinZIP, WinRAR, & WinACE files 
+- Runs extraction process in thread, preventing hanging 
+- Can search through directories for archives! 
+- Improved Right-Click Shell Integration coding 
+- Improved uninstall program 
+- New dialogs for selecting folders throughout the program 
+
+< 2.0.0.0
+ExtractNow used to be called Uncompressor '99. 

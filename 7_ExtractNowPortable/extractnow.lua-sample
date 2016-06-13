@@ -1,0 +1,126 @@
+
+-- Archive_GetPath(ArchiveHandle) returns full path to first archive in set
+-- Archive_GetDestination(ArchiveHandle) returns extraction destination
+-- Archive_GetLastError(ArchiveHandle) returns last error string
+
+-- Archive_GetProgressPosition(ArchiveHandle) returns extraction progress
+-- Archive_GetProgressMaximum(ArchiveHandle) returns extraction progress
+-- Archive_GetProgressMinimum(ArchiveHandle) returns extraction progress
+
+-- Archive_FileGetFirst(ArchiveHandle) returns first handle
+-- Archive_FileGetNext(ArchiveHandle, FileHandle) returns next handle
+-- Archive_FileGetPath(ArchiveHandle, FileHandle) returns path for handle
+-- Archive_FileGetPercentComplete(ArchiveHandle, FileHandle) returns percent complete
+
+-- Archive_ErrorGetFirst(ArchiveHandle) returns first handle
+-- Archive_ErrorGetNext(ArchiveHandle, ErrorHandle) returns next handle
+-- Archive_ErrorGetMessage(ArchiveHandle, ErrorHandle) returns message for handle
+
+-- Archive_VolumeGetFirst(ArchiveHandle) returns first handle
+-- Archive_VolumeGetNext(ArchiveHandle, VolumeHandle) returns next handle
+-- Archive_VolumeGetPath(ArchiveHandle, VolumeHandle) returns path for handle
+
+function ExtractNow_ArchiveEvent_Volume(ArchiveHandle, VolumeHandle)
+	
+	local f = io.open("log.txt", "a")
+
+	f:write("Volume: ")
+	f:write(Archive_VolumeGetPath(ArchiveHandle, VolumeHandle))
+	f:write("\n")
+	
+	f:close()
+	
+end
+
+function ExtractNow_ArchiveEvent_Directory(ArchiveHandle, FileHandle)
+
+	local f = io.open("log.txt", "a")
+
+	f:write("Directory: ")
+	f:write(Archive_FileGetPath(ArchiveHandle, FileHandle))
+	f:write("\n")
+	
+	f:close()
+
+end
+
+function ExtractNow_ArchiveEvent_File(ArchiveHandle, FileHandle)
+
+	local f = io.open("log.txt", "a")
+
+	f:write("File: ")
+	f:write(Archive_FileGetPath(ArchiveHandle, FileHandle))
+	f:write("\n")
+	
+	f:close()
+
+end
+
+function ExtractNow_ArchiveEvent_FileProgress(ArchiveHandle, FileHandle)
+
+	local f = io.open("log.txt", "a")
+
+	f:write("File: ")
+	f:write(Archive_FileGetPath(ArchiveHandle, FileHandle))
+	f:write(" ")
+	f:write(Archive_FileGetPercentComplete(ArchiveHandle, FileHandle))
+	f:write("%\n")
+	
+	f:close()
+	
+end
+
+function ExtractNow_ArchiveEvent_FileError(ArchiveHandle, FileHandle, ErrorHandle)
+
+	local f = io.open("log.txt", "a")
+
+	f:write("File Error: ")
+    f:write(Archive_FileGetPath(ArchiveHandle, FileHandle))
+    f:write(" @\n")
+	f:write(Archive_ErrorGetMessage(ArchiveHandle, ErrorHandle))
+	f:write("\n")
+	
+	f:close()
+
+end
+
+function ExtractNow_Archive_Error(ArchiveHandle, ErrorHandle)
+
+	local f = io.open("log.txt", "a")
+
+	f:write("Archive Error: ")
+	f:write(Archive_ErrorGetMessage(ArchiveHandle, ErrorHandle))
+	f:write("\n")
+	
+	f:close()
+
+end
+
+function ExtractNow_Archive_PreExtraction(ArchiveHandle)
+
+    os.remove("log.txt")
+
+	local f = io.open("log.txt", "a")
+
+	f:write("Archive: ")
+	f:write(Archive_GetPath(ArchiveHandle))
+	f:write("\n")
+	
+	f:close()    
+    
+end
+
+function ExtractNow_Archive_PostExtraction(ArchiveHandle, Successful)
+
+	local f = io.open("log.txt", "a")
+
+    if (Successful) then
+        f:write("Completed Successfully: Yes\n")
+    else
+        f:write("Completed Successfully: No\n")
+	end 
+    
+	f:close()
+
+end
+
